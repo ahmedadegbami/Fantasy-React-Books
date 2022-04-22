@@ -30,7 +30,7 @@ class BookList extends Component {
                 .includes(this.state.query.toLocaleLowerCase())
             )
             .map((onebook) => (
-              <Col xs={3}>
+              <Col key={onebook.asin} xs={3}>
                 <SingleBook book={onebook} />
               </Col>
             ))}
