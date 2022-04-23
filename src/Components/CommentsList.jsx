@@ -4,7 +4,7 @@ class CommentsList extends Component {
   render() {
     return (
       <li className="text-dark">
-        {this.props.comment.comment} {this.props.comment.rate}
+        {this.props.comment.comment} - {this.props.comment.rate}
       </li>
     );
   }
