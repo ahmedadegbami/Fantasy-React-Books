@@ -28,9 +28,11 @@ class SingleBook extends Component {
             <CommentArea comments={this.state.comments} />
           )}
         </Card.Body>
+        {console.log(this.props.book.asin)}
       </Card>
     );
   }
+
   componentDidMount = async () => {
     const response = await fetch(
       "https://striveschool-api.herokuapp.com/api/comments/" +
